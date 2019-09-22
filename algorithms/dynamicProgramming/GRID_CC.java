@@ -29,7 +29,7 @@ import java.io.InputStreamReader;
 	1 ≤ T ≤ 10
 	1 ≤ N ≤ 1000
  */
-public class GRID_CS {
+public class GRID_CC {
 
 	public static void main(String[] args) throws java.lang.Exception {
 		// your code goes here
