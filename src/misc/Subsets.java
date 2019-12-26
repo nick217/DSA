@@ -39,4 +39,21 @@ public class Subsets {
 		}
 		return powerSet;
 	}
+	
+	public List<List<Integer>> subsetsUsingBitManipulation(int[] nums) {
+        int n = nums.length;
+        int totalSets = (1 << n);
+        List<List<Integer>> ls = new ArrayList<List<Integer>>();
+        
+        for (int i = 0; i < totalSets; ++i) {
+            List<Integer> list = new ArrayList<Integer>();
+            for (int j = 0; j < n; ++j) {
+                if ((i & (1 << j)) != 0)
+                    list.add(nums[j]);
+            }
+            ls.add(list);
+        }
+        
+        return ls;
+    }
 }

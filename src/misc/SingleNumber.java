@@ -50,4 +50,8 @@ public class SingleNumber {
 		}
 		return missingNum;
 	}
+
+	public static void main(String args[]) {
+
+	}
 }
